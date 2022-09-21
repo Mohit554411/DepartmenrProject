@@ -1,0 +1,72 @@
+{% include 'Header.html' %}
+<div class="PlacementStyle">
+    <div class="row g-0">
+        <div class="placementLeftCard">
+            <div class="placementMenu"><a href="/placements/" style="text-decoration: none;"
+                    class="placementLink">&#10095;
+                    &nbsp; About Placements</a></div>
+            <div class="placementMenu"><a href="/ourRecruiter/" style="text-decoration: none;"
+                    class="placementLink">&#10095; &nbsp; Our Recruiters</a></div>
+            <div class="placementMenu"><a href="/placementTraining/" style="text-decoration: none;"
+                    class="placementLink">&#10095; &nbsp; Placement Training</a></div>
+            <div class="placementMenu"><a href="/placementAchievement/" style="text-decoration: none;"
+                    class="placementLink">&#10095; &nbsp; Placement Achievements</a></div>
+        </div>
+        <div class="placementRightCard">
+            <div style="background-color: #dee2e6;padding: 15px 20px;">
+                <div class="pt-2">
+                    <h4>COMPANIES VISITED FOR – 2019/2020/2021</h4>
+                </div>
+                <div class="table-responsive mt-5">
+                    <table class='table table-striped table-hover'>
+                        <thead>
+                            <tr>
+                                <th>S.No</th>
+                                <th>COMPANY NAME</th>
+                                <th>SALATY IN INR</th>
+                            </tr>
+                        </thead>
+                        {% for n in recruiterDetails %}
+                        <tr>
+                            <td style="font-size: 14px;padding: 15px 10px;">{{n.id}}</td>
+                            <td style="font-size: 13px;padding: 15px 5px;">{{n.company_name}}</td>
+                            <td style="font-size: 14px;padding: 15px 5px;">{{n.salary}}</td>
+                        </tr>
+                        {% endfor %}
+                    </table>
+                </div>
+                <nav aria-label="Page navigation example">
+                    <ul class="pagination justify-content-end" style="color: white;">
+                        {% if recruiterDetails.has_previous %}
+                        <li class="page-item">
+                            <a class="page-link"
+                                style="color:white;background-image: linear-gradient(to right bottom, #28e3c5, #00c0b5, #009d9f, #007b85, #105b68);"
+                                href="/ourRecruiter/?page={{recruiterDetails.previous_page_number}}" tabindex="-1"
+                                aria-disabled="true">Pre</a>
+                        </li>
+                        {% endif %}
+                        {% for n in totalPage %}
+                        {% if page_num == n %}
+                        <li class="page-item"><a class="page-link"
+                                style="color:white;background-image: linear-gradient(to right bottom, #ec435a, #d03544, #b52730, #9a191d, #800a0a);"
+                                href="/ourRecruiter/?page={{n}}">{{n}}</a></li>
+                        {% else %}
+                        <li class="page-item"><a class="page-link"
+                                style="color:white;background-image: linear-gradient(to right bottom, #28e3c5, #00c0b5, #009d9f, #007b85, #105b68);"
+                                href="/ourRecruiter/?page={{n}}">{{n}}</a></li>
+                       {% endif %}
+                        {% endfor %}
+                        {% if recruiterDetails.has_next%}
+                        <li class="page-item">
+                            <a class="page-link"
+                                style="color:white;background-image: linear-gradient(to right bottom, #28e3c5, #00c0b5, #009d9f, #007b85, #105b68);"
+                                href="/ourRecruiter/?page={{recruiterDetails.next_page_number}}">Next</a>
+                        </li>
+                        {% endif %}
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+{% include 'Footer.html' %}

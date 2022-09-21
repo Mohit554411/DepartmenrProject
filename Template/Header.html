@@ -1,0 +1,67 @@
+<html lang="en">
+    {% load static %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/static/main.css"/>
+    <link rel="icon" type="image/x-icon" href="/static/favicon.ico">
+    <script src="/static/main.js"></script>
+    <title>{{title}}</title>
+</head>
+
+<body>
+    <nav class="navStyle" id="navId">
+        <a href="/"><img src="/static/cseLogo.png" alt="" class="headerLogo"></a>
+        <div class="headerMenu">
+            <a href="/" class="{% if request.path == '/' %}activeMain{% endif %}">Home</a>
+            <a href="/about/" class="{% if request.path == '/about/' %}activeMain{% endif %}">About</a>
+            <a href="/faculty/" class="{% if request.path == '/faculty/' %}activeMain{% endif %}">Faculty</a>
+            <a href="/events/" class="{% if request.path == '/events/' or request.path == '/upcomingevents/' or request.path == '/activity/' %}activeMain{% endif %}">Events</a>
+            <a href="/placements/" class="{% if request.path == '/placements/' or request.path == '/ourRecruiter/' or request.path == '/placementTraining/' or request.path == '/placementAchievement/' %}activeMain{% endif %}">Placements</a>
+            <a class="dropdown-toggle {% if request.path == '/facility/' or request.path == '/gallery/' or request.path == '/contact/' %}activeMain{% endif %}" style=" cursor: pointer " id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                More
+            </a>
+            <ul class="dropdown-menu p-0" aria-labelledby="dropdownMenuButton1" style="background-image: linear-gradient(to right bottom, #28e3c5, #00c0b5, #009d9f, #007b85, #105b68); border: 2px solid white;">
+                <li>
+                    <a href="/facility" style=" padding: 16px 16px ;color: white; text-decoration: none; display: block;" class="{% if request.path == '/facility/' %}activeMain{% endif %}">
+                        Facility
+                    </a>
+                </li>
+                <li>
+                    <a href="/contact/" style=" padding: 16px 16px ;color: white; text-decoration: none;  display: block" class="{% if request.path == '/contact/' %}activeMain{% endif %}">
+                        Contact Us
+                    </a>
+                </li>
+            </ul>
+            <span class="hamburger" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                aria-controls="offcanvasExample">&#9776;</span>
+        </div>
+    </nav>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasExample" aria-labelledby="offcanvasExampleLabel">
+        <div class="offcanvas-header shadow-lg">
+            <img src="/static/cseLogo.png" alt="" class="img-fluid rounded-2"
+                style="width:50%;height:100px;float:left;background-color: white;">
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body" style="background-image: linear-gradient(to right bottom, #28e3c5, #00c0b5, #009d9f, #007b85, #105b68);">
+            <div class="sideheaderMenu">
+                <a href="/">Home</a>
+                <a href="/about/">About</a>
+                <a href="/faculty/">Faculty</a>
+                <a href="/events/">Events</a>
+                <a href="/placements/">Placements</a>
+                <a href="/facility/">Facility</a>
+                <a href="/contact/">Contact Us</a>
+            </div>
+        </div>
+    </div>

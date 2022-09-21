@@ -1,0 +1,122 @@
+{% include 'Header.html' %}
+{% load static %}
+<marquee width="100%" direction="left" height="100px" style="height: 40px;line-height: 40px;margin-top: 130px;"
+   onmouseenter="stop()" onmouseleave="start()">
+   <div style="color: #43c6ac; font-weight: 1000; cursor:pointer">Welcome To CSE Department,Stay With Us</div>
+</marquee>
+<div class="fontStyle row g-0">
+   <!-- <img src="/static/Poster.jpeg" alt="" class="img-fluid"> -->
+   <div class="leftCard ">
+      <h3 class="fw-bolder mt-3 text-center">Hod's Message</h3>
+      <img src="/media/{{facultyDetails.faculty_img}}" class="img-fluid" style="
+                        width: 200px;
+                        height: 250px;
+                        margin-top: 25px;" alt="">
+      <div class='shadow-lg p-3 mt-3 bg-body' style=" display: inline-block;">
+         <b class='fs-4'>{{facultyDetails.name}}</b>
+         <div class='fs-6'>Head of The Department</div>
+         <div class='fs-6'>Computer Science and Engineering</div>
+      </div>
+      <p class='mt-3 p-4 mb-0 text-white rounded'
+         style="background-color: #466f68;font-size: 15px;text-align: justify;">The Department of Computer Science
+         and Engineering has highly qualified and
+         motivated faculties who are in positioned to create the technological leaders of tomorrow. Our goal is to
+         ensure that our students highly motivated and understand the dynamics of the industry and upgrade their
+         knowledge accordingly. The students of CSE are well prepared to play the roles of problem solvers, project
+         leaders, entrepreneurs, and above all ethical citizens of a global society. Our objective is to empower our
+         students with latest technical knowledge and skills to meet global challenges. Department not only give
+         emphasis on study also motivate students to do research and innovation. We encourage the students to develop
+         leadership and teamwork approach through innovative teaching-learning process. Institute provides a platform
+         for the students to enhance their employability skills through Industry Institute Collaboration.</p>
+   </div>
+   <div class="rightCard ">
+      <h4 class="fw-bolder mt-3 p-3">WE ARE</h4>
+      <p style="font-size: 14px;text-align: justify;">The Department of Computer Science and Engineering (CSE) is one of
+         the five
+         departments at Nagarjuna College of Engineering and Technology. It administers bachelor's programs in Computer
+         Science and Engineering, as well as master's and doctoral degree programs in Computer Science and Engineering.
+      </p>
+      <p style="font-size: 14px;text-align: justify;">About twenty full-time faculty members provide a comprehensive
+         program that
+         emphasizes problem solving skills in C programming, Web designing aspects, data structure and application level
+         thinking through EBox Portal. Pattern recognition, data mining and machine learning, distributed systems and
+         android application, operating systems and computer networks, computer security, and IOT computing.</p>
+      <p style="font-size: 14px;text-align: justify;">The CSE department's many strengths include its high
+         faculty-to-student ratio,
+         state of the art facilities, renowned faculty, strong focus on undergraduate education balanced with
+         leading-edge research, and emphasis on leadership, service, and ethics.</p>
+      <p style="font-size: 14px;text-align: justify;">Faculty and students often collaborate on projects, In addition to
+         the excellent
+         faculty and quality research opportunities available through the department, there is a real sense of community
+         and teamwork here.</p>
+      <p style="font-size: 14px;text-align: justify;">The CSE department also offers three optional Concentrations for
+         undergraduate
+         majors: Music, Dance, and Photography. These concentrations provide students interested in those topic areas
+         with a recommended sequence of elective courses. Completion of one of the Concentrations is recorded on the
+         student's official transcript at graduation.</p>
+      <p style="font-size: 14px;text-align: justify;">Graduates from the CSE department are heavily recruited by many
+         top companies.
+         Graduates take up careers in the computing industry, the finance industry, traditional large engineering
+         companies, startup companies, management consulting companies, medical informatics companies, and government.
+         Some of our top undergraduates each year enter the PhD program in Computer Science and Engineering at leading
+         universities around the country.</p>
+      <p style="font-size: 14px;text-align: justify;">The Department of Computer Science and Engineering department also
+         offers PhD
+         Doctoral Degree with many aspirants reaching heights in field of Research in various fields and also enriching
+         their personal growth by Publishing National and International papers, National and International Journals and
+         Research Patenting due to an excellent support from PhD Doctorate Guides.</p>
+   </div>
+   <!-- <img src="/static/about-bg.jpg" alt="" class="logoback"> -->
+   <div class="picRow">
+      <div class="picCol1">
+         <img src="/static/pic11.JPG" alt="">
+         <img src="/static/pic3.jpeg" alt="">
+      </div>
+      <div class="picCol2">
+         <img src="/static/dept.jpg">
+         <img src="/static/lab3.jpeg" alt="">
+      </div>
+      <div class="picCol3">
+         <img src="/static/NAAC A+.jpg" alt="">
+         <img src="/static/pic8.JPG" alt="">
+      </div>
+   </div>
+</div>
+
+<div class=' p-2 text-white' style=" background-color: #466f68;">
+   <div class='text-center mt-4'>
+      <img src='/static/cseLogo.png' alt="" class='shadow-lg p-1 bg-body rounded-circle'
+         style="width:200px;height:200px;text-align:center" />
+   </div>
+   <div>
+      <p class="text-center fs-3 text-uppercase mt-4"><b>Vision & Mission</b></p>
+      <div class="homeContent">
+         <p class="fs-4 text-uppercase"><b>Our Vision</b></p>
+         <ul>
+            <li>
+               <p>Excellence in creating globally competent professionals in the field of Computer Science and
+                  Engineering.
+               </p>
+            </li>
+         </ul>
+         <p class="fs-4 text-uppercase"><b>Our Mission</b></p>
+         <ul>
+            <li>
+               <p>M1: Creating excellence in Computer Science & Engineering by imparting knowledge,latest
+                  technologies,and
+                  academic professionalism to fulfil the needs of the industry.</p>
+            </li>
+            <li>
+               <p>M2: Developing Technical proficiencies, communication skills, and teamwork among the students </p>
+            </li>
+            <li>
+               <p>M3: Inculcating ethics, social behaviour, and universal human values for sustainable societal
+                  growth and
+                  environmental protection.</p>
+            </li>
+         </ul>
+      </div>
+   </div>
+
+</div>
+{% include 'Footer.html' %}

@@ -1,0 +1,77 @@
+{% include 'Header.html' %}
+<div class="eventContent">
+   <div class=" eventsPosition">
+      <div class="eventsMenu" style="background-image: linear-gradient(to right bottom, #28e3c5, #00c0b5, #009d9f, #007b85, #105b68);">
+         <a href="/events/" 
+            style="text-decoration: none;color: white;">Events</a>
+      </div>
+      <div class="eventsMenu" style="background-image: linear-gradient(to right bottom, #d0d953, #bac342, #a5ad30, #90981e, #7b8306);">
+         <a href="/upcomingevents/" 
+            style="text-decoration: none;color: white;">UpComung
+            Events</a>
+      </div>
+      <div class="eventsMenu" style="background-image: linear-gradient(to right bottom, #ec435a, #d03544, #b52730, #9a191d, #800a0a);">
+         <a href="/activity/" 
+            style="text-decoration: none;color: white;">Activity</a>
+
+      </div>
+   </div>
+   {% for n in activityDetails %}
+   {% if n.id|divisibleby:"2" %}
+   <div class="row g-0">
+      <div class="eventleftcard2">
+         <div class="imgContent">
+            <img src="/media/{{n.activity_img1}}" alt="" class="activityPic img-fluid">
+            <p style="font-weight: bold;text-align: center;">{{n.img1_title}}</p>
+         </div>
+         <div class="middleImg">
+            <img src="/media/{{n.activity_img2}}" alt="" class="activityPic img-fluid">
+            <p style="font-weight: bold;text-align: center;">{{n.img2_title}}</p>
+         </div>
+         <div class="imgContent">
+            <img src="/media/{{n.activity_img3}}" alt="" class="activityPic img-fluid">
+            <p style="font-weight: bold;text-align: center;">{{n.img3_title}}</p>
+         </div>
+      </div>
+      <div class="eventrightcard2">
+         <div>
+            <div class="vision-heading-text2">
+               <h3>{{n.activity_title}}</h3>
+            </div>
+            <div class="activityContent" style="text-align: justify;">
+               {{n.activity_det | safe}}
+            </div>
+         </div>
+      </div>
+   </div>
+   {% else %}
+   <div class="row g-0">
+      <div class="eventleftcard">
+         <div>
+            <div class="vision-heading-text2">
+               <h3>{{n.activity_title}}</h3>
+            </div>
+            <div class="activityContent" style="text-align: justify;">
+               {{n.activity_det |safe}}
+            </div>
+         </div>
+      </div>
+      <div class="eventrightcard">
+         <div class="imgContent">
+            <img src="/media/{{n.activity_img1}}" alt="" class="activityPic img-fluid">
+            <p style="font-weight: bold;text-align: center;">{{n.img1_title}}</p>
+         </div>
+         <div class="middleImg">
+            <img src="/media/{{n.activity_img2}}" alt="" class="activityPic img-fluid">
+            <p style="font-weight: bold;text-align: center;">{{n.img2_title}}</p>
+         </div>
+         <div class="imgContent">
+            <img src="/media/{{n.activity_img3}}" alt="" class="activityPic img-fluid">
+            <p style="font-weight: bold;text-align: center;">{{n.img3_title}}</p>
+         </div>
+      </div>
+   </div>
+   {% endif %}
+   {% endfor %}
+</div>
+{% include 'Footer.html' %}

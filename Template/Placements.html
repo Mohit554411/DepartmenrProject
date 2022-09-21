@@ -1,0 +1,39 @@
+{% include 'Header.html' %}
+<div class="PlacementStyle">
+   <div class="row g-0">
+      <div class="placementLeftCard">
+         <div class="placementMenu"><a href="/placements/" style="text-decoration: none;" class="placementLink">&#10095;
+               &nbsp; About Placements</a></div>
+         <div class="placementMenu"><a href="/ourRecruiter/" style="text-decoration: none;"
+               class="placementLink">&#10095; &nbsp; Our Recruiters</a></div>
+         <div class="placementMenu"><a href="/placementTraining/" style="text-decoration: none;"
+               class="placementLink">&#10095; &nbsp; Placement Training</a></div>
+         <div class="placementMenu"><a href="/placementAchievement/" style="text-decoration: none;"
+               class="placementLink">&#10095; &nbsp; Placement Achievements</a></div>
+      </div>
+      <div class="placementRightCard">
+         <div class="aboutPlacement">
+            <!-- <img src="/static/PlacementOverview.png" alt="" class="img-fluid"> -->
+            <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+               <div class="carousel-inner">
+                 <div class="carousel-item active" data-bs-interval="10000">
+                   <img src="/static/PO2020.jpg" class="d-block w-100" alt="...">
+                 </div>
+                 <div class="carousel-item" data-bs-interval="2000">
+                   <img src="/static/PlacementOverview.png" class="d-block w-100" alt="...">
+                 </div>
+               </div>
+               <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Previous</span>
+               </button>
+               <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                 <span class="visually-hidden">Next</span>
+               </button>
+             </div>
+         </div>
+      </div>
+   </div>
+</div>
+{% include 'Footer.html' %}

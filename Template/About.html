@@ -1,0 +1,293 @@
+{% include 'Header.html' %}
+<div class="aboutContent">
+   <div class='row g-0'>
+      <div class="aboutleftcard">
+         <img src="/static/NAAC A+.jpg" alt="" class="img-fluid"
+            style="border-radius: 10px 20px 20px 10px;box-shadow: 0px 0px 20px rgb(192, 188, 188);">
+      </div>
+      <div class="aboutrightcard">
+         <h2 style="font-weight:500;background-color: #466f68;padding: 30px 20px ;color: white;">
+            PROGRAMME DETAILS</h2>
+         <div style="background:white;padding: 20px 20px 20px 20px; margin-top: -20px; border: 3px solid #466f68;">
+
+            <table class="table table-borderless mt-3 overflow-auto" style=" width: 100%;">
+               <tbody class='text-start'>
+                  <tr>
+                     <td>Course Name:</td>
+                     <td>B.E in Computer Science Engineering ( 4 Years )</td>
+                  </tr>
+                  <tr>
+                     <td>Intake:</td>
+                     <td>120</td>
+                  </tr>
+                  <tr>
+                     <td>Accreditation Status:</td>
+                     <td> Accredited AICTE</td>
+                  </tr>
+                  <tr>
+                     <td>Professional Society Memberships :</td>
+                     <td>IAENG</td>
+                  </tr>
+                  <tr>
+                     <td>Professional Activities :</td>
+                     <td>Student chapter Seminars, workshops and FDPs are conducted regularly</td>
+                  </tr>
+                  <tr>
+                     <td>Consultancy Activities : </td>
+                     <td> Consultancy activities till 2022 sum up to more than 2000US$</td>
+                  </tr>
+               </tbody>
+            </table>
+            <div>
+               <div class="vision-heading-text2">
+                  <h3>Grants Fetched :</h3>
+               </div>
+
+               <div class="vision-content-text2">
+                  Department has got the fund of 1230000Rs for working on ISRO Respond project in
+                  2018.
+               </div>
+               <div class="vision-content-text2">
+                  Department has got the fund of 462000Rs for working on ISRO Respond project in
+                  2019.
+               </div>
+
+            </div>
+            <div class="w3-container w3-animate-left">
+               <div class="vision-heading-text2">
+                  <h3>Departmental Achievements :</h3>
+
+               </div>
+
+               <div class="vision-content-text2">
+                  Faculties and Technical staff are actively participating in inter-departmental as
+                  well as inter collegiate sports competitions
+                  and got laurels to the college and the department.
+               </div>
+               <div class="vision-content-text2">
+                  Organized visits to various industries DIQA, NAL, DELL, Infosys etc.
+               </div>
+
+            </div>
+         </div>
+      </div>
+   </div>
+   <div class="row g-0">
+      <div class="aboutleftcard">
+         <div style="background:white;padding: 0px 20px 20px 20px;border: 3px solid #466f68;">
+            <div class="">
+               <div class="vision-heading-text2">
+                  <h3>Training Programme</h3>
+               </div>
+               <div class="vision-content-text2">
+                  280 Hours of extensive Training in Java Fullstack for CSE Students by M/S E-Box
+               </div>
+               <div class="vision-content-text2">
+                  150 Hours of extensive Training in C/C++, Java, Python for CSE Students by M/S Bizotic
+               </div>
+               <div class="vision-content-text2">
+                  M/S. Cranes Software International Ltd – 260 Hours of Intensive Training on Advanced C, Data
+                  structure, ARM, Programming in Embedded C, MATLAB for CSE Students.
+               </div>
+               <div class="vision-content-text2">
+                  M/S. BGS Infotech – 180 Hours of Training in ARM, Programming in Embedded C, PCB Design, Micro
+                     Controllers, Uart(Pc-Uc), DC Motor Interface & PWM Control for CSE Students.
+               </div>
+               <div class="vision-content-text2">
+                  50 Hours of extensive Training in Aptitude for CSE Students by M/S Bizotic. NPTEL Online
+                  Certification Courses for all branches.
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="aboutrightcard">
+         <div style="background:white;padding: 0px 20px 20px 20px;border: 3px solid #466f68;">
+            <div class="">
+               <div class="vision-heading-text2">
+                  <h3>SCHEME & SYLLABUS</h3>
+               </div>
+               {% for n in syllabusDetails %}
+               <div class="vision-content-text2">
+                  <a href="/media/{{n.file}}" target="_blank" style="text-decoration:none;color:black">{{n.title}}</a>
+               </div>
+               {% endfor %}
+            </div>
+            <div>
+               <div class="vision-heading-text2">
+                  <h3>Achievements</h3>
+               </div>
+               <div class="vision-content-text2">
+                  Excellent Results.
+               </div>
+               <div class="vision-content-text2">
+                  Excellent Placements with attractive packages.
+               </div>
+               <div class="vision-content-text2">
+                  Excellent Performance in National level courses organized.
+               </div>
+               <div class="vision-content-text2">
+                  Government fund projects.
+               </div>
+               <div class="vision-content-text2">
+                  Award winning performances by <b>CSE</b> deparment students in National level competition.
+               </div>
+               <div class="vision-content-text2 table-responsive">
+                  <table class="table table-borderless mt-3 overflow-auto text-center"
+                  style=" width: auto; margin: auto;">
+                  <thead>
+                     <tr>
+                        <th>Certified Teachers</th>
+                        <th>Enrolled Student</th>
+                        <th>Total Placed Student</th>
+                        <th>Student Clubs</th>
+                     </tr>
+                     <tr>
+                        <td>25</td>
+                        <td>8K+</td>
+                        <td>6.8K+</td>
+                        <td>5+</td>
+                     </tr>
+                  </thead>
+               </table>
+               </div>
+               
+            </div>
+         </div>
+      </div>
+   </div>
+   <h2
+      style="font-weight:1000;background-color: #466f68;padding: 30px 20px ;color: white; width: 50%;text-align: center;">
+      PEOs &nbsp; POs &nbsp; AND &nbsp; PSOs</h2>
+   <div class="row g-0">
+      <div class="aboutleftcard">
+         <div style="background:white;padding: 0px 20px 20px 20px; border: 3px solid #466f68; ">
+
+            <div class="w3-container w3-animate-left">
+               <div class="vision-heading-text2">
+                  <h3>PROGRAM EDUCATIONAL OBJECTIVES (PEOs)</h3>
+                  <!-- <hr style="width: 7.5rem; height: 3px" /> -->
+               </div>
+
+               <div class="vision-content-text2">
+                  PEO1: Graduates in Computer Science & Engineering can apply the technical knowledge
+                  of design and analysis for sustainable societal growth.
+               </div>
+               <div class="vision-content-text2">
+                  PEO2:Graduates of Computer Science & Engineering can demonstrate excellence in
+                  research and innovations for the industrial needs.
+               </div>
+               <div class="vision-content-text2">
+                  PEO3:Graduates in Computer Science & Engineering can demonstrate good communication
+                  skills, dynamic leadership qualities for environmental protection.
+               </div>
+
+            </div>
+            <div class="w3-container w3-animate-left">
+               <div class="vision-heading-text2">
+                  <h3>PROGRAM SPECIFIC OUTCOME (PSOs)</h3>
+                  <!-- <hr style="width: 7.5rem; height: 3px" /> -->
+               </div>
+
+               <div class="vision-content-text2">
+                  PSO-1:Professional Skills: The ability to understand, analyze and develop computer
+                  programs in the areas related to system software, multimedia, web design, big data
+                  analytics, and networking for efficient design of computer-based systems of varying
+                  complexity.
+               </div>
+               <div class="vision-content-text2">
+                  PSO-2: Problem - Solving Skills: The ability to apply standard practices and
+                  strategies in software project development using open-ended programming environments
+                  to deliver a quality product for business success.
+               </div>
+               <div class="vision-content-text2">
+                  PSO-3: Mathematical concepts: Ability to apply mathematical concepts to solve real
+                  world problems using appropriate data structure and suitable algorithms.
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="aboutrightcard">
+         <!-- <h2 style="font-weight:500;background-color: #001a4b;padding: 30px 20px ;color: white;">
+       PEOs POs AND PSOs</h2> -->
+         <div style="background:white;padding: 0px 20px 20px 20px;border: 3px solid #466f68;">
+            <div class="w3-container w3-animate-left">
+               <div class="vision-heading-text2">
+                  <h3>PROGRAM OUTCOMES (POs)</h3>
+                  <!-- <hr style="width: 7.5rem; height: 3px" /> -->
+               </div>
+
+               <div class="vision-content-text2">
+                  PO-1: Engineering Knowledge: Apply the knowledge of mathematics, science,
+                  engineering fundamentals, and Computer Science and Engineering principles to the
+                  solution of complex problems in Computer Science and Engineering.
+               </div>
+               <div class="vision-content-text2">
+                  PO-2: Problem Analysis: Identify, formulate, research literature, and analyze
+                  complex Computer Science and Engineering problems reaching substantiated conclusions
+                  using first principles of mathematics and engineering sciences.
+               </div>
+               <div class="vision-content-text2">
+                  PO-3: Design/Development of Solutions: Design solutions for complex Computer Science
+                  and Engineering problems and design system components or processes that meet the
+                  specified needs with appropriate consideration for the public health and safety, and
+                  the cultural, societal, and environmental considerations.
+               </div>
+               <div class="vision-content-text2">
+                  PO-4: Conduct Investigations of Complex problems: Use research-based knowledge and
+                  research methods including design of experiments, analysis and interpretation of
+                  data, and synthesis of the information to provide valid conclusions related to
+                  Computer Science and Engineering problems.
+               </div>
+               <div class="vision-content-text2">
+                  PO-5: Modern Tool Usage: Create, select, and apply appropriate techniques,
+                  resources, and modern engineering and IT tools including prediction and modeling to
+                  complex Computer Science and Engineering activities with an understanding of the
+                  limitations.
+               </div>
+               <div class="vision-content-text2">
+                  PO-6: The Engineer and Society: Apply reasoning informed by the contextual knowledge
+                  to assess societal, health, safety, legal and cultural issues and the consequent
+                  responsibilities relevant to the professional Computer Science and Engineering
+                  practice.
+               </div>
+               <div class="vision-content-text2">
+                  PO-7: Environment and Sustainability: Understand the impact of the professional
+                  Computer Science and Engineering solutions in societal and environmental contexts,
+                  and demonstrate the knowledge of, and need for sustainable development.
+               </div>
+               <div class="vision-content-text2">
+                  PO-8: Ethics: Apply ethical principles and commit to professional ethics and
+                  responsibilities and norms of the Computer Science and Engineering practice.
+               </div>
+               <div class="vision-content-text2">
+                  PO-9: Individual and Team work:Function effectively as an individual, and as a
+                  member or leader in diverse teams, and in multidisciplinary settings.
+               </div>
+               <div class="vision-content-text2">
+                  PO-10: Communication: Communicate effectively on complex Computer Science and
+                  Engineering activities with the engineering community and with society at large,
+                  such as, being able to comprehend and write effective reports and design
+                  documentation, make effective presentations, and give and receive clear
+                  instructions.
+               </div>
+               <div class="vision-content-text2">
+                  PO-11:Project management and finance: Demonstrate knowledge and understanding of the
+                  engineering and management principles and apply these to one’s own work, as a member
+                  and leader in a team, to manage Computer Science and Engineering projects and in
+                  multidisciplinary environments
+               </div>
+               <div class="vision-content-text2">
+                  PO-12: Life Long Learning: Recognize the need for, and have the preparation and
+                  ability to engage in independent and life-long learning in the broadest context of
+                  technological change.
+               </div>
+
+            </div>
+
+         </div>
+      </div>
+   </div>
+   
+</div>
+</div>
+{% include 'Footer.html' %}

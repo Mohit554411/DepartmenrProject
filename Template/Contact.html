@@ -1,0 +1,69 @@
+{% include 'Header.html' %}
+<div class="contactStyle">
+   <div class="contactTitle">Contact Us</div>
+   <div>
+      <div class="row">
+         <div class="contactLeftCard">
+            <div style="display: flex;">
+               <img src="https://img.icons8.com/android/36/000000/phone.png" style="width: 32px;height:36px" />
+               <div class="ps-2">
+                  <div style="font-size: 24px;">Call Us for Admissions</div>
+                  <p>
+                  <div style="color: grey;font-size: 14px;">Tel- 080-67462700</div>
+                  <div style="color: grey;font-size: 14px;">Mobile- 8722992333 </div>
+                  </p>
+               </div>
+            </div>
+            <div>
+               <div style="display: flex;">
+                  <img src="https://img.icons8.com/android/36/000000/phone.png" style="width: 32px;height:36px" />
+                  <div class="ps-2">
+                     <div style="font-size: 24px;">Call Us for General Queries</div>
+                     <p style="color: grey;font-size: 14px;">Tel- 080-67462700</p>
+                  </div>
+               </div>
+            </div>
+            <div>
+               <div style="display: flex;">
+                  <img src="https://img.icons8.com/ios-glyphs/36/000000/new-post.png" style="width: 32px;height:36px" />
+                  <div class="ps-2">
+                     <div style="font-size: 24px;">Email</div>
+                     <p><a  style="color: grey;font-size: 14px;"href="mailto:admissions@ncetmail.com">admissions@ncetmail.com</a></p>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <div class="contactRightCard">
+            <form action="{% url 'thankyou' %}" method="post">
+               {% csrf_token %}
+               <div class="flexDivStyle">
+                  <div class="fromDivStyle">
+                     <label for="name" class="labelStyle">Name</label>
+                     <input type="text" name="name" required class="inputStyle">
+                  </div>
+                  <div class="fromDivStyle">
+                     <label for="email" class="labelStyle">Email</label>
+                     <input type="email" name="email" required class="inputStyle">
+                  </div>
+               </div>
+               <div class="fromDivStyle">
+                  <label for="" class="labelStyle">Mobile No</label>
+                  <input type="tel" name="mobile" required class="inputStyle">
+               </div>
+               <div class="fromDivStyle mt-4">
+                  <label for="" class="labelStyle">Subject</label>
+                  <input type="text" name="subject" required class="inputStyle">
+               </div>
+               <div class="fromDivStyle mt-4">
+                  <label for="" class="labelStyle">Message</label>
+                  <textarea type="text" name="msg" class="inputStyle"></textarea>
+               </div>
+               <div class="mt-4 ms-3">
+                  <button type="submit" class="buttonStyle">Submit</button>
+               </div>
+            </form>
+         </div>
+      </div>
+   </div>
+</div>
+{% include 'Footer.html' %}
