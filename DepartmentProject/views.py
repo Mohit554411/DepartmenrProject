@@ -15,7 +15,7 @@ def home(request):
         'title':'CSE Department',
         'facultyDetails':facultyDetails
     }
-    return render(request,"Home.html",data)
+    return render(request,"index.html",data)
 
 def about(request):
     syllabusDetails = SyllabusDetails.objects.all()
